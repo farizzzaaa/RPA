@@ -1,0 +1,225 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="_5Headhunter" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,2524.8" sap2010:WorkflowViewState.IdRef="_5Headhunter_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="41">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="35">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="_5Headhunter" sap:VirtualizedContainerService.HintSize="550.4,2460" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="countVacancy" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractVacancy" />
+      <Variable x:TypeArguments="sd:DataTable" Name="vacancy" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Работа в Казахстане, поиск персонала и публикация вакансий - hh.kz" sap:VirtualizedContainerService.HintSize="508.8,1057.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d9696020-d0e3-4337-98a6-43776e46f0ea" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,840.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Найти'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d9696020-d0e3-4337-98a6-43776e46f0ea" Text="JavaScript" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://hh.kz/search/vacancy?text=rpa&amp;from=suggest_post&amp;salary=&amp;clusters=true&amp;area=159&amp;ored_clusters=true&amp;enable_snippets=true" DesignTimeRectangle="177, 209, 838, 50" ElementType="InputBox" FriendlyName="'INPUT a11y-search-input'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='bloko-input-text focus-visible' aaname='' /&gt;" Guid="05136601-2966-40ed-b325-3a597c724815" ImageBase64="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" InformativeScreenshot="bbe1d97fad756fd59df5ddc7db5d76f1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Работа в Казахстане, поиск персонала и публикация вакансий - hh.kz' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1052, 223, 50, 20" ElementType="Text" FriendlyName="'Найти'" FullSelectorArgument="&lt;webctrl aaname='Найти' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Найти' tag='SPAN' type='' class='supernova-search-submit-text' check:innerText='Найти' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAYCAYAAACx4w6bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJDSURBVFhH7ZbBaiJBEIb3LXwSnyQ332CPeQMvOXvzmJs5BGZZWGEPmxwWD0sIIcQEWeakkICGSTIxas84jn+qqqfj6HZ2YEYExYIf0jV/d/tVT9fkS+noAbuoPdi2aQ+2bVoCa3igiNBI5ZZ0E7EB7o3lWZZ+hwjiGZzvfRr3Ue3GwPMEBzbvGrQ5sKMn1LszgpMlgHEE5ydD2rzFtUGwzaowWOWPgjueS14insP3A9RPjecVLUV5FaBq1mH9UBiwX/KJ57MQzxgu/+2NF2uQyhdTBJZ8IbByi+4NJ1SEVmcC51bh0k/etZHCocyzgXnJXibvoXrF8/Uabkj5UZiMSVevdBdtYKmCZINlhwE7vqeTiqgQJ4s1+Ec7z+wyBfoXTFc5hm87SeNf+aElC9ihS0WMaB0uRDbYHIPHCK5NQ/3KZd0x6XiYoSnAq2B6HNwP4fB+ecFOaEzb9DpvVv8amkcfB9981K4naHanBG/aXozWL36+DFbpzOiRPmXZLxdYHzV+W2Su3V/sjp0r9HRKIgi5cUzR9vlkLWD1N7TJP3BfZH5uMGk8c7Qv+HOxdrAXnI1oQB/d5rmHcson1bSANfgVDUPU6tqXD0zpeXRBK//xFwBLNqL/HtJQpWM6Fb7Mq2B0mgFV2b32Pry5wGQds/bn/uInRuE/KmnLzW4E6fZyzVbAOD6qrJULjIIbz6KYawcjnVJHMt8tDmq97t8hvl5OZdi749MxYOkqa+UCSxpPln8JbJe0B9s27cG2TTsK9oB3guknN8UkWzcAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Найти работу'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d9696020-d0e3-4337-98a6-43776e46f0ea" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://hh.kz/?utm_source=google&amp;utm_medium=cpc&amp;utm_term=headhunter&amp;utm_campaign=google_all_aldev_kr_hh_brand_new_kz_search&amp;utm_content=gid_134010187665&amp;network=g&amp;adposition=&amp;keyword=headhunter&amp;gclid=CjwKCAjwv4SaBhBPEiwA9YzZvJsH2TPqqVWTIwNhpJkQZKGe-h9LvcaTQRjMqvyFLy-g-lXGen6hLxoCd1sQAvD_BwE" DesignTimeRectangle="1120, 564, 220, 60" ElementType="Button" FriendlyName="'Найти работу'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='bloko-button bloko-button_kind-primary bloko-button_scale-large bloko-button_stretched' aaname='Найти работу' check:innerText='Найти работу' /&gt;" Guid="ea64e029-2c69-4b53-916f-096c5bfd60cd" ImageBase64="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" InformativeScreenshot="48a4405871d0b36523da7adf3f54211e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Работа в Казахстане, поиск персонала и публикация вакансий - hh.kz' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1167, 582, 126, 22" ElementType="Text" FriendlyName="'Найти работу'" FullSelectorArgument="&lt;webctrl aaname='Найти работу' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Найти работу' tag='SPAN' type='' class='supernova-search-submit-text' check:innerText='Найти работу' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Вакансии'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="d9696020-d0e3-4337-98a6-43776e46f0ea" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://hh.kz/search/vacancy?text=JavaScript&amp;from=suggest_post&amp;salary=&amp;clusters=true&amp;area=159&amp;ored_clusters=true&amp;enable_snippets=true" DesignTimeRectangle="177, 416, 1563, 25" ElementType="Text" FriendlyName="'166 вакансий'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='bloko-header-section-3' aaname='166  «JavaScript»' /&gt;" Guid="ddd0e386-8ace-43ea-93ff-0baafa4796d6" InformativeScreenshot="da06befe182cdab8aa0d32ef6eed4959.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Работа в Казахстане, поиск персонала и публикация вакансий - hh.kz' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="177, 347, 77, 38" ElementType="Text" FriendlyName="'Вакансии'" FullSelectorArgument="&lt;webctrl aaname='Вакансии' parentid='HH-React-Root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Вакансии' parentid='HH-React-Root' tag='DIV' type='' class='supernova-navi-search-tab supernova-navi-search-tab_active' check:innerText='Вакансии' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFEAAAAqCAYAAADLarc0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASlSURBVGhD7ZfRS2JLHMfvnyQtCCIRtCBLywXFB13CIhC6IAZtXLwSRA9KD6Kw1MPNwLYHI7glXDoQ28NqEPbQGiwKgQuLQSAs2N2FA4Iv3/ubOefoqOfcbJu3Ow+fhzNnzszPz8z8fuMvvV4PiuehJEpASZSAkigBJVECSqIElEQJKIkSGJZ4nYVr6sU4Xh9Cb7M4vdWHPlYY2EqMrG/j3Y5Aag3+WSY0iN2G0F/BsZWYuRbaLO5OEKN37p2b8Xf/cyaX2LtBhh3tTFVo09HUslgN++Bm74jpwDLSpSb00e9ylnwd9YNlTFNbrNQ22rptVAtJRAMzfAzXlAcvw2vYvTLfM5xis2nXbzVk3gb5HK6pGfiHUtFoPCaNPPxiu8N89b3gWPtkErsPqP+VxBwd53c3g7zYLC7yIKO5E5Qvq6hqh9hY8lCbB4mzB7PfSNBfDxGhcdKlKmp3bCwd5RR9432DREFDlcYpl7axGmAChPQxoUSdnpkMdziJfY3F9B6JMBs/jtN71sdOYhvHMTbfIxLvjdM42j5ZYeEEkbkQdkavgf15H/w06WDXEXoVaS/17wc5HHT9z1/h+l1Dx+rfPkeadmB/V1pw2cJunUhiC8UFmmvhEM2u0OdHBelZH6JHTXoel9g5S8IdiCM2L7SPzfeAD3944F+JIzQSx5MLy8ZZa9DfFnNVUxVTrhA0iYmJu+s/Mb4LFdkPp+dJJLY1vlPGFmSIEYk6Pb/2IH3RNOJ2kMh2+Jx3C+VbYzc+KnEsUEaXVplN4t3Eh47YrqNz30TtsoLjQhaJJTM/xk7Q5n3MoDk+JP52WAQ2ztcGHWcNxZ0tOs5mfhz5UU7wmG+2+dy28fcZlshTEo/VXHw7id0m3+F8ccwj/XMSCbbtxfets02E2NFlQc0GEZpfQ7qQR5odi1GJuSo6VyxfUVq4Fu+bVGgKRqFh47hfvUHotyQyR1Sw+HfDP2r1gPIcy78WB2uDmB6J30CQ+O0cCa91MpwlGsc9jzpLEVIlftP4j5xLnaOli/1o1WwlsuB01HKUE19nUbO++ZyngkWrfNBAR8xjOuWx/nf07BSb2O54nNs4XaEqnalQLrbiqfBY3P204yDxgvrz424u/LMk0nHmk0wljeNs9b0a6Xf7nhcEe4n0bMqPHBnHul2K0zjLOL4TxiA6H7eMtPAUiU6FxbzjGnLNeBYWEelXbIa9xAj1c69o5m8hJpU4VlgySUResavLC/j3GkZffhRo0tll7LKrBMuJuTheemcwzYqQk0SCV2iWpH/Qs3k/c4c3UfzIxtGwv76IaTaOWOUnkihccZayOGbjaXlEWTyBbXP3m/EQEatocewluqYWUfxi9SEmlTgOHQXKU/uXw8dEp0qVtgoJ/3+dR/kL3Sn3DElVMWhBorUbrQVpX+UHhYRyazR1iNp9m64U9Ey7qsW+mVAiY+iyTXFFUidosgXj7814xJTCsZc4R89DV7hHJSp+CiVRAkqiBJRECSiJElASJaAkSkBJlICSKAElUQJKogSURAkoiRJQEiWgJEpASZRAX+L6pw3FE1ESJaAkSkBJlEBfYuef71A8h+/4F0Nx2fzBhWtIAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[countVacancy]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="333.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Количество: &quot; + countVacancy]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUQSURBVHhe5ZtLiB1FFIazdie4ExmG+IivETRKogREIhglEdRNCIKIZKGiMCCCECQMvgYCARVxFQxiEEWJ0Y0EwUUghgjujDEGFN1kESboMpNjfZ2+d6q6/+quvrdvpvvegg9mTp8+dc4//ahHzwa7cX7SLDj2OJYcRxwnHOcdK47LOfyMjWP44Ms5nKtitoY0jsl1jiccyw4KokAbEc4lBrGISWzV58hI44jc4Xjd8aNDFdMGxKYP+lI5NEYaG3KXg0v2jEMlPQnoiz7pW+WUjDQmcr1j0fGLQyV5LaBvciAXlWMt0pjAdscXDpXUekAu5KRyrUQaa3jZcdahEllPyIncVM5RpDHCDY53HasOlUAXIDdyJFdVQwlpFMw5PnaoTrsIuZKzqiVAGgsQ6JBDddRlyLlWBGn04FLq01++CLlX3g7S6MH9pAL3CWpQtWVIYw5P1C4/8FKhhujbQRodvFO7+KobFWqR44SSwcGoqkuDnLagptKIMfglh6GlCjANUFtQb/CLg8lF9dh+091mb71XZv427Z/C3hfL8XY+pX3Hg9qCCZRfPDDDUieu8cBDJtumBe2fwvEf8iBee9uJoHzHhxqHNfvFM8eun9L2XwBqHK4n+AKw0KBOCOm/AECtgQAsNaWt5EyHANSaLa8NBGC9TTmWmQ4BgJqHArDoqJzKTI8A1DwUgJVX5VRmegSg5kwA1t7Tl65TBNh4u9lzL5jt23/1nf7Sq2b3bQ3j+KQI8NhOs8XXrsZ7Y5/ZrqfNbtoY+jSDmhcQgA0I5aCpEoDCP/jI7N//cqPXVlfNjn1ndv+D5ZhVAux+1uy3s7mx0P78y+z5veV46exBgPrBj09MgG2PmP16Jv+lol28aPbwo2HMmAAH3ze7ciU3VLTlA2G8dJYQgK0odVATE4C/Rmo7dTqMqQRoEo+ra8euMGYaR5o9ACEmwKBdumT2zbdmhw6bnTyVG0V7/Mm1mEqAQeMKOPmT2Sefmn19VN9etM8+D/NM4wQCsCmpDmqqBDh6zOzWO0N/HoDqMn5nec0nJsCFC6FQcO8Ws3N/5A5e+/uf0C+N8wjAzqw6qIkJwP0/d7M+5/TPuZPX/L9YTIBndodxBryymDt4DZHnbtH+cVYQoNnubUwAXnnKHw67y7fYuJwHx5UAv58LY/hs35E7FVrzscjl9gSomr/zaiy274+vHVcCfPlVGMMnlgO3h/KPkwnQzi2wZZv2hwMHcyevUfTguBLgQyeaH8Pnns25U6GRm/KPk90C7TwEqy4/3unFVidA1VCYvlRrLkD2EGznNdhPAbLXYDsDoX4KkA2E2hkK91OAbCjc3mRI+UN3BcgmQ+1Ph4t0U4DhdBgmuyDSTQGGCyIw2SWxbgoQLIlNdlG0mwIEi6KTXRbvngClZXFI2xjZvNVsZaUMe4bKH95cKvszdR4c5+ficc7xY/jQV9EfyE35lyltjEDa1lj/iW6NQbNBUT+Jbo5C/fZ4v6ndHoeZ/kACZv4TGZjpj6QGzPRncgNm+kNJmPlPZWGmP5YeQKA+XQnkWls8SGMELiXupy4/GMmNHCsvex9prIEnahdfkeQUfdrHkMYEeKd2abBELvI9X4c0JsKoiqHles4d6JscSiO8VKSxIUwumGFdy6k0fdFnMLEZBWkcEebYLDSkrSyNBrHpYzifHxdpHBOWmlhvY9GRlddmu88hnEsMYhEzW8ZqE2lsmQ7/+/z8hv8Bzh785eBt/iYAAAAASUVORK5CYII=" InformativeScreenshot="e25f67de211d0f6f9ca5bcf9f750a310.png" Selector="&lt;html app='chrome.exe' title='Работа в Казахстане, поиск персонала и публикация вакансий - hh.kz' /&gt;" Url="https://hh.kz/?utm_source=google&amp;utm_medium=cpc&amp;utm_term=headhunter&amp;utm_campaign=google_all_aldev_kr_hh_brand_new_kz_search&amp;utm_content=gid_134010187665&amp;network=g&amp;adposition=&amp;keyword=headhunter&amp;gclid=CjwKCAjwv4SaBhBPEiwA9YzZvJsH2TPqqVWTIwNhpJkQZKGe-h9LvcaTQRjMqvyFLy-g-lXGen6hLxoCd1sQAvD_BwE" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="508.8,1269.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="cd3f90d1-37ba-4795-94b9-ec3f0f41d048" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,1052.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="DT" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractVacancy]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='New column 1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='New column 2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='New column 3'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" MaximumResults="0" ScopeIdentifier="cd3f90d1-37ba-4795-94b9-ec3f0f41d048" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://hh.kz/search/vacancy?text=Javascript&amp;from=suggest_post&amp;area=159" DesignTimeRectangle="712, 624, 63, 20" ElementType="Text" FriendlyName="'дальше'" FullSelectorArgument="&lt;webctrl aaname='дальше' parentid='HH-React-Root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='дальше' parentid='HH-React-Root' tag='SPAN' type='' class='' check:innerText='дальше' /&gt;" Guid="11fb6479-531a-42a0-8f86-10970c9012b9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAAAYCAYAAAChg0BHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMQSURBVFhH7ZbPSxtBFMf7JwUDAQkitFSKUFByiEFiEQSF4CGIqAjiwZDDEqHoxRQ0HhI8REGyUNqDP6BsDpKAuKccJIKwIKRQWAjs5ds3O5vdmd0ErYItZQ8fyE5m3rz9zMzbeWNZFkI4oQyBUIZAKEMglCEQyhAIZQiEMgT6yGhCGYoi0ofMieH16xrQ9tcwNznq/D+Md1NL2KsLfQjjZFGKIZE5hsH6XRXsZ+XKGxfEyWu7KbU3toU4DnzOAhpCW0c/Rm52DDEWIz6G9HoJmuH9zwjK6Go0aQqKqkH74aAWkKQgngwT51vDFDSFlX3V7nN+soPsJHvJBPZ0Lx5PbAkHvVg2KpTp15NhqEsYocVKrpZQs9+nhJUplv8iqnfeuKCM+2NkhqjTvb9NkGF8R452hLRTGLcVpCVp/VfJsgxUM68kw9SQi0eRPmxJ46xuC+WZKGJ5DabTNlBGTdxCfhkD4Qkny97Ef11GncUew8aRuDM5B8s0VsgtKMNOzJf8IBldE51b3d725d08HROnfggJ/4kMkdiHFLLbKlq/emOeJ4P/lmPLeAsfkGGc0mBf8KAMEzf783QOeUCWeHJhDcpRAVnW9kwZ2UNv1WpHm0jT9o5MFnHTZWNeIsN37Afgk8EKYxTjX3ShjfDLuC5inD0f6ujYiTqYF8i9QIb/mJhnm9Q+jM9N9vw8GeZl3o6duzSlcf2QZTyotLIfsXcttDF8Mvhk81IlZnTO8vzT9Q/J6BVQ1qctLly3becwMltBy2lzZZh3TVTzCUTeb6IsFBkb59OaVFQ07siwXsQEPcemqO8Z66PiYP0TRuKjhJPwQ8tuV6hiR+I7T5LhHZMLVHfXkOx3TJbpfiDkZhfB6QL/ZDrUlJS0AG2SwxbJzVetILfA6luCFsDbMa4MbpMCP4K7O+pFr2C+TWBuq4LGvYFvq/Q8U0G7VxTpLrLxte1OyHm8gPKLEcXs9MY4Mp6MvBuNOt0tepeuoVFMLORR1X+6/zNkGb7tJsNfIPBF+Y8IZQiEMgRcGSGhDIlQhouF37lyamJFm0G9AAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Работа в Казахстане, поиск персонала и публикация вакансий - hh.kz' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="477, 543, 1263, 20016" FriendlyName="'Senior Backend'" FullSelectorArgument="&lt;webctrl id='a11y-main-content' tag='DIV' /&gt;" Guid="348789de-5c55-4667-a525-d0ea017a2ec7" InformativeScreenshot="86739fa9b507b56d4c348e258c040e6d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Работа в Казахстане, поиск персонала и публикация вакансий - hh.kz' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExtractVacancy]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="433.6,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="HeadHunter" WorkbookPath="Vacancy.xlsx" />
+            <ui:ReadRange AddHeaders="True" DataTable="[DT]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="433.6,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="HeadHunter" WorkbookPath="Vacancy.xlsx">
+              <ui:ReadRange.Range>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:ReadRange.Range>
+            </ui:ReadRange>
+            <ui:FilterDataTable DataTable="[DT]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="433.6,162.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[DT]" SelectColumnsMode="Remove">
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:Int32">[0]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="433.6,274.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="271.2,156.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="229.6,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[CurrentRow(0).ToString]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUQSURBVHhe5ZtLiB1FFIazdie4ExmG+IivETRKogREIhglEdRNCIKIZKGiMCCCECQMvgYCARVxFQxiEEWJ0Y0EwUUghgjujDEGFN1kESboMpNjfZ2+d6q6/+quvrdvpvvegg9mTp8+dc4//ahHzwa7cX7SLDj2OJYcRxwnHOcdK47LOfyMjWP44Ms5nKtitoY0jsl1jiccyw4KokAbEc4lBrGISWzV58hI44jc4Xjd8aNDFdMGxKYP+lI5NEYaG3KXg0v2jEMlPQnoiz7pW+WUjDQmcr1j0fGLQyV5LaBvciAXlWMt0pjAdscXDpXUekAu5KRyrUQaa3jZcdahEllPyIncVM5RpDHCDY53HasOlUAXIDdyJFdVQwlpFMw5PnaoTrsIuZKzqiVAGgsQ6JBDddRlyLlWBGn04FLq01++CLlX3g7S6MH9pAL3CWpQtWVIYw5P1C4/8FKhhujbQRodvFO7+KobFWqR44SSwcGoqkuDnLagptKIMfglh6GlCjANUFtQb/CLg8lF9dh+091mb71XZv427Z/C3hfL8XY+pX3Hg9qCCZRfPDDDUieu8cBDJtumBe2fwvEf8iBee9uJoHzHhxqHNfvFM8eun9L2XwBqHK4n+AKw0KBOCOm/AECtgQAsNaWt5EyHANSaLa8NBGC9TTmWmQ4BgJqHArDoqJzKTI8A1DwUgJVX5VRmegSg5kwA1t7Tl65TBNh4u9lzL5jt23/1nf7Sq2b3bQ3j+KQI8NhOs8XXrsZ7Y5/ZrqfNbtoY+jSDmhcQgA0I5aCpEoDCP/jI7N//cqPXVlfNjn1ndv+D5ZhVAux+1uy3s7mx0P78y+z5veV46exBgPrBj09MgG2PmP16Jv+lol28aPbwo2HMmAAH3ze7ciU3VLTlA2G8dJYQgK0odVATE4C/Rmo7dTqMqQRoEo+ra8euMGYaR5o9ACEmwKBdumT2zbdmhw6bnTyVG0V7/Mm1mEqAQeMKOPmT2Sefmn19VN9etM8+D/NM4wQCsCmpDmqqBDh6zOzWO0N/HoDqMn5nec0nJsCFC6FQcO8Ws3N/5A5e+/uf0C+N8wjAzqw6qIkJwP0/d7M+5/TPuZPX/L9YTIBndodxBryymDt4DZHnbtH+cVYQoNnubUwAXnnKHw67y7fYuJwHx5UAv58LY/hs35E7FVrzscjl9gSomr/zaiy274+vHVcCfPlVGMMnlgO3h/KPkwnQzi2wZZv2hwMHcyevUfTguBLgQyeaH8Pnns25U6GRm/KPk90C7TwEqy4/3unFVidA1VCYvlRrLkD2EGznNdhPAbLXYDsDoX4KkA2E2hkK91OAbCjc3mRI+UN3BcgmQ+1Ph4t0U4DhdBgmuyDSTQGGCyIw2SWxbgoQLIlNdlG0mwIEi6KTXRbvngClZXFI2xjZvNVsZaUMe4bKH95cKvszdR4c5+ficc7xY/jQV9EfyE35lyltjEDa1lj/iW6NQbNBUT+Jbo5C/fZ4v6ndHoeZ/kACZv4TGZjpj6QGzPRncgNm+kNJmPlPZWGmP5YeQKA+XQnkWls8SGMELiXupy4/GMmNHCsvex9prIEnahdfkeQUfdrHkMYEeKd2abBELvI9X4c0JsKoiqHles4d6JscSiO8VKSxIUwumGFdy6k0fdFnMLEZBWkcEebYLDSkrSyNBrHpYzifHxdpHBOWmlhvY9GRlddmu88hnEsMYhEzW8ZqE2lsmQ7/+/z8hv8Bzh785eBt/iYAAAAASUVORK5CYII=" InformativeScreenshot="3b14cd7dc29724cab27931f90a64674a.png" Selector="&lt;html app='chrome.exe' title='Работа в Казахстане, поиск персонала и публикация вакансий - hh.kz' /&gt;" Url="https://hh.kz/search/vacancy?text=JavaScript&amp;from=suggest_post&amp;salary=&amp;clusters=true&amp;area=159&amp;ored_clusters=true&amp;enable_snippets=true" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
