@@ -1,0 +1,272 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Tender" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,3898.4" sap2010:WorkflowViewState.IdRef="Tender_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="42">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="68">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Tender" sap:VirtualizedContainerService.HintSize="567.2,3833.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dbDannye" />
+      <Variable x:TypeArguments="x:String" Name="variable1" />
+      <Variable x:TypeArguments="x:String" Name="number" />
+      <Variable x:TypeArguments="x:String" Name="textdbDannye" />
+      <Variable x:TypeArguments="x:String" Name="GetText1" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable2" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BuildDataTable DataTable="[dbDannye]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="525.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Номер_x0020_объявления&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;значение&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Срок_x0020_окончания_x0020_приема_x0020_заявок&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;дата&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Объявления о проведении государственных закупок :: Портал государственных закупо" sap:VirtualizedContainerService.HintSize="525.6,3640.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="28311c4c-0999-41b1-82b6-d4835216b3ea" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="492,3424" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'INPUT  in_name'" sap:VirtualizedContainerService.HintSize="450.4,156" sap2010:WorkflowViewState.IdRef="SetValue_1" Text="интернет">
+              <ui:SetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="454afe52-7615-4823-8256-a64df1c4c730" InformativeScreenshot="e59e7ae93112d3cb5fc4ced81732c23c" Selector="&lt;webctrl tag='INPUT' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SetValue.Target>
+            </ui:SetValue>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Расширенный поиск'" sap:VirtualizedContainerService.HintSize="450.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28311c4c-0999-41b1-82b6-d4835216b3ea" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://goszakup.gov.kz/ru/search/announce?filter%5Bname%5D=%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82&amp;filter%5Bcustomer%5D=&amp;filter%5Bnumber%5D=&amp;filter%5Byear%5D=&amp;filter%5Bamount_from%5D=&amp;filter%5Bamount_to%5D=&amp;filter%5Btrade_type%5D=&amp;filter%5Bstart_date_from%5D=25.09.2022&amp;filter%5Bstart_date_to%5D=&amp;filter%5Bend_date_from%5D=&amp;filter%5Bend_date_to%5D=&amp;filter%5Bitog_date_from%5D=&amp;filter%5Bitog_date_to%5D=&amp;smb=" DesignTimeRectangle="1666, 613, 201, 44" ElementType="Button" FriendlyName="'Расширенный поиск'" FullSelectorArgument="&lt;webctrl id='show_filter' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl id='show_filter' tag='BUTTON' type='button' class='btn btn-info hidden-xs hidden-sm' aaname='Расширенный поиск' check:innerText='Расширенный поиск' /&gt;" Guid="6a46b50b-d54b-4919-bae3-3288fe36998d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAM0AAAAwCAYAAACysP6uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAARHSURBVHhe7Z1NbuMwDIXnEMWcqafqYTo9QYFZZVZdDdATpMiyRVcFumgWRRcei/oxSVFy2DqpMXkCPiS2KYoi+RTv8mO/3w8AgMOBaABwAtEA4ESI5nb3OFz+/jv8/PVnuLjeAHDWBB0EPQRdcJ0U0YQH1kQAwEYIp4gmKMoyBgBsSB+VaPBKBkCboI9KNJYhAGACogHACUQDgBOIBgAnEA0ATiAaAJxANAA4gWgAcALRAOAEogHACUQDgBOIBgAnpxXN/cvwOrTG23BjzQHHI9Tj/WW4ouuH4e79Y7i7Vzag4ltEs93Vz25ITRDOqbl6/giJj+P1ybQBktWI5uL6adg2nwGwHlYnmtfnh3Iv/vqwUV4lGPqVj9vs3sYb8teLfAo/4bWErWvMyadxiZvWHF9ldnJta1/iJB+HtqHnel8UA3tVMmKqcmnZMPQ61rox3/1XNL2fMvQeenUJGPFm3zpHug+m56p2qYeqtRZmPaJRz+rmTgnhrxCUeOlPzDMK4xdNWnccZZ3SELqxZSyxCZhNmscPBqt5o68Ti8bak4EVb3WPYuH7jDmubWbybM0T+5a1C3Hw3B6LlYgmJackMSZQ2+mGp+vee3hVGL9oov1YjPGjxGM0/2Sbfcc9aBtqMObfasIYwylFk3Iw7vProkm11HWZibed5148vHYh3/3Yl+JbRGMO3TiF6QSiUezsphSowgRcoslFS69hs8Xkc+m7YaPmrkI0eS59GjEz5kXTqosSU14zfG/kmfx29iRqF/zpPB6JbxFNKXQHau48UjKsk7zrixcm4REN2YYi67hV4xf4evS9NZRozKFFYw8pGj3UOmzf07VqPGtfDO2nvteqS1s0rTxba0mSzzC6dsuyTtE07CzR1CcagxUm3ztYNBRDmqvjoeu6uajIQjT9BgyYjaHn5pi4jY7JsInxRD96nXId5uX75GMZ0dR18ec5xq/2LfAJfinWKZqcUHE/FmMqjjq5LAw/h4pmO9qVezrudK0bo5yY1pyMislqwqoBjH1U/i0bdurrdeL1uM9x79LHV0XTqEsj3m6eZ+PhtTugHxZinaJJdrwpqSFpsMagpEp/VMBskwrDG+kw0YTB5um403Xd2LLAMRZ+rz6FrSasfNG1EoTZYNKGr6/Xic/GwdcmH3IPGive6h754ftMDW3YdPNszRM5VLWr5h+HdYomUJKaxniC8CYodqWB82BF0D46Q4uGN3YVd75+5mvbzVaaMw3hNz9XTRhj+Ixo6pGf63VyXKIWel0DK15zD7ou+heA1prJc2I6MOOY5ijRFFuVq4U5rWj+FxrFBecBRPMZIJqzBqL5DBDNWQPRAOAEogHACUQDgBOIBgAnEA0ATiAaAJxANAA4gWgAcALRAOCkEg3+qBaANuYf1eIv0QFoY/4l+u3u0TQGAGxIH5VosnCCovCqBkB8JQt64IIJCNEAAObYD/8AlhwXBQyxzdcAAAAASUVORK5CYII=" InformativeScreenshot="84da81f640f9ebcdd7972a823c021d37.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Объявления о проведении государственных закупок :: Портал государственных закупок Республики Казахстан' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'DIV'" sap:VirtualizedContainerService.HintSize="450.4,156" sap2010:WorkflowViewState.IdRef="SetValue_2" Text="[DateTime.Today.ToString]">
+              <ui:SetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="cdd002eb-ce6b-419d-b3ed-65a3481f7556" InformativeScreenshot="a402a6b37b0794f02c821c7fb3c1d4a7" Selector="&lt;webctrl id='in_start_date_from' tag='INPUT' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SetValue.Target>
+            </ui:SetValue>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Найти'" sap:VirtualizedContainerService.HintSize="450.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28311c4c-0999-41b1-82b6-d4835216b3ea" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://goszakup.gov.kz/ru/search/announce" DesignTimeRectangle="50, 644, 71, 41" ElementType="Button" FriendlyName="'Найти'" FullSelectorArgument="&lt;webctrl name='smb' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl name='smb' tag='BUTTON' type='submit' class='btn btn-success btn-sm' aaname='Найти' check:innerText='Найти' /&gt;" Guid="ef86bfa8-7961-4527-b5fa-7cdf7201eb58" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAtCAYAAADm45atAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAH5SURBVGhD7ZsxT8JAFMf9SGrcjV+EzY/DruJO1AFk0TjpBCROhkRiYpOGMDFAKB1gefbuSnvtvaLPGFrk/5JfUu56d70f99oO14Nms0ndbpdGoxHNZjNaLBYUhiFggCwBkCUgI+vx851qz2067lzT4X1jb1Hzr7206cn/4GV13l7ppHVFR0zjfcYWlsg6f7iBLAa1whxZZ3eXkMWgUtKRdXp7AVkFQJYAyBIAWQIgSwBkCYAsAZAlALIEQJYAyBLwh7J61F8RzSc9pq5BrYCIgiFbV8hgTPPVmOr695A8mlIrf84WqbasiPpkGTU0UdT3tqi8rCpRniyVYnq9WGHV6xWVpKDVhy4zY7Gh61XKEnl+2nY9XqZMSEmymMn406gkLXNkxfV5gUbCkvoDq8zpP5VbKVkbY2MaZieYlaX6XpIXuKvtR7KU6GDq/kFCSlpZa1zBnCx1rPrlUvN7WepYPUXzq01OSbLMhesoSM1EjJZhXhl+I0uNa65pV2Xp+0/unUlP2pXVj9o5Ap12BbImUV1y/k7LsidoJqIiI0aFlbpSWdwYuycrIpERh+fH96/4HFOfXX1SWdlrqZSs/w9kCYAsAZAlALIEQJYAyBIAWQIgSwBkCYAsAZAlwJGFbZI87DZJbMDlYTfgYms3D7u1Gx8NpPAfDYT0BZXlpYzzuMVPAAAAAElFTkSuQmCC" InformativeScreenshot="a76fc2cedab4aff55739dfefb2d06246.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Объявления о проведении государственных закупок :: Портал государственных закупок Республики Казахстан' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="450.4,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ee016384-272e-4ce7-92f1-68456e795dcf" InformativeScreenshot="a1cd3c9f45f2918fa323ed0e00641945" Selector="&lt;webctrl name='smb' tag='BUTTON' type='submit' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='№' ReferenceIdx='0' Name='№'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Наименование объявления' ReferenceIdx='1' Name='Наименование объявления'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Наименование объявления Url' ReferenceIdx='2' Name='Наименование объявления Url'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Способ' ReferenceIdx='3' Name='Способ'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Начало приема заявок' ReferenceIdx='4' Name='Начало приема заявок'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Окончание приема заявок' ReferenceIdx='5' Name='Окончание приема заявок'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Сумма, тг.' ReferenceIdx='6' Name='Сумма, тг.'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Статус' ReferenceIdx='7' Name='Статус'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='№' attr='text' /&gt;&lt;column name='Наименование объявления' attr='text' name2='Наименование объявления Url' attr2='href' /&gt;&lt;column name='Способ' attr='text' /&gt;&lt;column name='Начало приема заявок' attr='text' /&gt;&lt;column name='Окончание приема заявок' attr='text' /&gt;&lt;column name='Сумма, тг.' attr='text' /&gt;&lt;column name='Статус' attr='text' /&gt;&lt;/extract-table&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="450.4,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="28311c4c-0999-41b1-82b6-d4835216b3ea" Version="V1">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="60, 256, 1783, 4834" FriendlyName="'№Наименование объявлени…'" FullSelectorArgument="&lt;webctrl aria-role='grid' tag='TABLE' /&gt;" Guid="a0bcc774-e906-424f-bb58-c820939c4f43" InformativeScreenshot="a46d49fd6973e0e68bc13c239fbcdfa3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Объявления о проведении государственных закупок :: Портал государственных закупок Республики Казахстан' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450.4,2198.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416.8,2080.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="srok" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGoToUrl DelayAfter="4" DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="375.2,82.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[CurrentRow(2).ToString]" Version="V1" />
+                    <uix:NGetAttribute Attribute="value" DisplayName="Get Attribute 'Номер объявления'" sap:VirtualizedContainerService.HintSize="375.2,208" sap2010:WorkflowViewState.IdRef="NGetAttribute_1" ScopeIdentifier="28311c4c-0999-41b1-82b6-d4835216b3ea" Version="V1">
+                      <uix:NGetAttribute.Result>
+                        <OutArgument x:TypeArguments="x:String">[number]</OutArgument>
+                      </uix:NGetAttribute.Result>
+                      <uix:NGetAttribute.Target>
+                        <uix:TargetAnchorable BrowserURL="https://goszakup.gov.kz/ru/announce/index/8400853" DesignTimeRectangle="447, 363, 606, 43" ElementType="InputBox" FriendlyName="'8400853-1'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control' aaname='' /&gt;" Guid="077a6500-a313-4cd4-a72b-74bddc7f99ae" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAmIAAAAvCAYAAABAD6Z9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANYSURBVHhe7dpBTttAFIDhXpKz5CJwDLgFOUSokFqBhEBiByynjGM7tvMCkxIzVf096VsQj028+zWTH8kYY4wxxlQZIWaMMcYYU2lGIfby+pbuHh7Tz193AACcUG6s3FrD6UMsX7j9fZ8eHp/S8/MzAAAnlBsrt9YwxvoQy5UmwgAA5pNbKzdXN32I5S2z6AYAAE4nN1c3QgwA4BsJMQCASoQYAEAlQgwAoBIhBgBQiRADAKhEiAEAVCLEAAAqEWIAAJUIMQCASoQYAEAl84fYzVVanZ2ls875Ol7Xub54X7dKVzfTa5t0tRo8Z3WVNqPrpWvW6aK7fmDN5nK1u967SOvhumPfK9I8Y/JcAGAxZg6xbfSsLjejvw9HSxdJ0xBrA6u/b/r3F9dMYmx9Pr1v6tj3inTvKsQAYKlmDbHtztIkNJodrzg+mgCKQizaJWt2kwafnWpNG2e7yNp37HvtadZ27yrEAGCp/p0Q6z4PYql5zt4R4jiYStaUhVjeqZqsKRC+a6SNsPydiu8BAP5Ls4ZY+RHeYF0QS/FR4fiYsWTNwb+HAdeG0thnsTR9zzJCDACWbeYQy9rYaaMmipXRbtasIba1OwLdv7aNo7N0cT1dHwXT8N2ODyohBgDLNm+ItbtLu6gJdqAKfsd1shBr/tc4Bg9H1lDBjlfwvT8jxABg2WYMsXg3qouhbZxt14wCZ8YQa9bs/Y6s5FjxwLuMlKwZE2IAsGyzh9h+4AzCp42y/phwort3dHTZGz+/ZE3Rrlno2DXbdxy+y/CosyPEAGDZvn9HrI2UKEwa0RFf9FnBkeZ0TbwjFsTagV2z7jv//c7amBADgGWbMcTeNXH0yW/EpqKg2rsviryCNSW/EdtbE3znkucUEGIAsGzzhljWRkt/TPdRhGVhiGVtEH34nJI102PDIIRKvvOx7xUQYgCwbPOHGAAAISEGAFCJEAMAqESIAQBUIsQAACoRYgAAlQgxAIBKhBgAQCVCDACgEiEGAFCJEAMAqESIAQBUEobY3cNjenh8Cm8AAODrcmvl5uqmD7GX17d0+/tejAEAzCA3Vm6t3Fzd9CGWJ1/IlZa3zAAAOJ3cWMMIyzMKMWOMMcYY830jxIwxxhhjKo0QM8YYY4ypMin9AXDV7UMrNVNdAAAAAElFTkSuQmCC" InformativeScreenshot="e9e1388eedb3a1f32be631b5968eab48.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Портал государственных закупок Республики Казахстан' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="60, 363, 368, 23" ElementType="Text" FriendlyName="'Номер объявления'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='col-sm-4 control-label' aaname='Номер объявления' check:innerText='Номер объявления' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXQAAAAbCAYAAABstnRoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOpSURBVHhe7ZiBbeMwDAB/0+xST1KvkYxRZIj+EHpLomyRomwnaIBUfwcIbWSKlGj4HORPAACAIUDoAACDgNABAAYBoQMADAJCBwAYBIQOADAICB0AYBBeJvT75yVcPm7hWz4r/t7CdLmE+Us+D8z3dQqX5ax6zOEu1wEAfgqE/kJiD6ar2wEAgB8Hob+KeMbe+QEAXsBbCd3+PKG/3X6H20ecn8Ltr0wVJF9b7x7mKl9zPa1b8n3JehnnXjQmt/0Z5WsOl89lJv6t4uozpR6t15xz1Zg8ZWz57H5kxD2sdGLiUHHtvXDvle1n2uN2Di8mn7k+a7mvdvCzFMCjvI3QmwddYjZh5Qd/+pianzFW+ah6Iq9KVLlGJYryIqjrijh3pV7W7eTehFiLKe/J7t+KsMVbJ/0wQlcxTZ/7eeqz5L3v3QuJeVToTr9zLedliNABHua1Qk8Pb3+somnEk9EPexHYLcxKJHF+CvOnlocrCis0R1SR3ZfRgn9d5871nReDJ+8jobv9OSH0Zu6M0L2Ytp/ps+3BrtBlv8u9qmPcXiJ0gKd4j2/oPaGpuCKwexL4Ghtjljp3Rx72Z4RI2leZT/mdurtCOcgte/BfKAuenI+E7tYs/SgddkSc8ta1Tgh9915s8w8LvfTU5vfqlVj5CADneCOhH8lvE1gURZFS+V8LRiS1rHXHDwhdSzHTCN09f5ZqK3Szx+6+dNy2j5zXXtcvgbNCNznWYWR9Jib1oOpZym/P5t0vhA7wKL/gG3qZr6QQ51dR5Ouu0JXMHDpCz7LaF7qXW337T2c6ekkJzvnbPYiw17pVPxInZH0mpncvDLrfglm7xsT5Ets9azWXYhA6wKO8h9A9yS1oqdUCi/8vArhuorCC8esbCUpdLThZ6wi74Oc2snzkZeFJ1PSkkZ49iytr25cTQu/cCytZ2++EOUeOmcO85F/zNWfNe1L9RugAT/EeQl9I8fWD3shWCywLzghP1WtFkddUopAaqq4nV0tZV+XO+9cS6tWz0vVq6rWO9Ew/SsyurE/FlNqtdOt1bb8XPKHHfddxbozpN0IHeIq3EXpkFYAMfd0ILOXYHnpXMCKiLaeRRNnHVQSdhpFLF5O7c1Z7Ji1TIQmsypXGgfRsP5qzypB9bfuwomyFHjnat9vvjtDVfVQxsmdTG6EDPMfLhP4r6LxYAAB+IwgdoQPAICB0hA4Ag/B/Cx0AYCAQOgDAICB0AIBBQOgAAIOA0AEAhiCEfw5b6CjtfSWRAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetAttribute.Target>
+                    </uix:NGetAttribute>
+                    <uix:NGetAttribute Attribute="value" DisplayName="Get Attribute 'Срок окончания'" sap:VirtualizedContainerService.HintSize="375.2,208" sap2010:WorkflowViewState.IdRef="NGetAttribute_2" ScopeIdentifier="28311c4c-0999-41b1-82b6-d4835216b3ea" Version="V1">
+                      <uix:NGetAttribute.Result>
+                        <OutArgument x:TypeArguments="x:String">[srok]</OutArgument>
+                      </uix:NGetAttribute.Result>
+                      <uix:NGetAttribute.Target>
+                        <uix:TargetAnchorable BrowserURL="https://goszakup.gov.kz/ru/announce/index/8418605" DesignTimeRectangle="1289, 562, 476, 43" ElementType="InputBox" FriendlyName="'2022-10-07 07:00:00'" FullSelectorArgument="&lt;webctrl idx='6' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='text' tag='INPUT' class='form-control' aaname='' /&gt;" Guid="5cfe9f4c-4841-4858-b853-91f1ed8c19f1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAeAAAAAvCAYAAAA7HRlAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQ1SURBVHhe7ddRbpw6FAbgu8msZTbSLKPZRbOI9KrSrVIpSqW8tX3kxsAwYA7gmYaxRvqO9D1kOBibSP7xP41SSimlrl4CWCmllKpQAlgppZSqUJMA/vX7T/P88tr8+98zAPBBUramjB3XEMDpwrfvP5qX15/N29sbAPBBUramjB2H8BDAKZ2FLwDsI2VsytpjDQGcjsjRDQDAx0hZeywBDABXIoABoAIBDAAVCGAAqEAAA0AFAhgAKhDAAFCBAAaACgQwAFQggAGggisE8GNzf3fX3A0OzcPXed/T58NGT8k4Zc9a99Q8HO6a+y/RtWz8T49BT2xtfdNrufvmcTTO3Nqc8vcxdfj8NOoNfLmf9IfvpKRnpnvHw32Hh+bpoh6A27VzAPcBMAqFLmyiADoFTf532Thlz9ry+Knb8OdB0o1/Cq3872Xb6wt8fWgOm+NfNqdujRvPb4N19O7yv0t7ZvpgHf5P+d+lPQC3bd8AbjfkfKPPN9MoNLqe4beScYqetaabx/HElQdwGJrhM3MF65vp571x6rtoTu31rZNq/N7a4B5+K+kJtM/PQrr92NgI8rwH4MbtfAKOTTbphY21DZeNANrc7N+V9Azhm57XnzzzgIrH6e5bDbNL1hcFUOD8OS18kMzmuDDGJNxLeubrjNc9/SAp6QG4dRUCuNu410+3/Sa8dpLLxwmV9GTCAF7a/AvGP3t9CyE5c8GcCoN98bQ5vr+kZ/x7L/5omK65pAfg1l09gLvgGW3QFwbwbJxASc9M7QBu+5dOsGPnzqkPsKVT95gABtjddQO4D5dJOJwbUEk0Tq6kJ1I5gNvwKQnJc+cUrmuBAAbY3fUCeCkQzwyoxXHGSnqWVA3ggvEG581p9YMmJ4ABdnedAF4LxIWNvA2M/CRYEqwrPe3G/n5tEG3mYQAvhUIXdm1vf99p/PWgCte38Owlm3Ma/d72Fp2sk3iM7t0eQ7ykZy5cd/YxUdIDcOv2D+DN0IxObMFm+5fhW2whBMMT5EbYdArXlxSNd1I+p3PDq+vPw30a+CU9gXZ+2QdJ/pFS0gNw4/YN4D7Mtjb+LkhOm+ssWErGKXzWpn6c+Sm0C9JTuETBGttc37iv+JSalM6p+32+phVtCI7uiUKxpGemD+5hnVGQl/QA3LZdA7g9DaWAiGRB04XS8fp0Ey8Z55xnrVoM4KQPvKMzAmFtfUftGs6Za6tgTqtretdeD+bUB+xReP9GT/xR0Qfq8b5wzSU9ALdr3xMwABASwABQgQAGgAoEMABUIIABoAIBDAAVCGAAqEAAA0AFAhgAKhDAAFCBAAaACgQwAFQggAGggjCAn19em5fXn+ENAMDfSRmbsvZYQwD/+v2n+fb9hxAGgA+WsjVlbMraYw0BnCpdSOmcjsgAwMdI2ToO31STAFZKKaXUdUoAK6WUUlevpvkfhBnzV0Iax/YAAAAASUVORK5CYII=" InformativeScreenshot="3f21dde7259f3fa4a9faf921e4d35188.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Портал государственных закупок Республики Казахстан' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="977, 562, 293, 23" ElementType="Text" FriendlyName="'Срок окончания'" FullSelectorArgument="&lt;webctrl aaname='Срок окончания приема заявок' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Срок окончания приема заявок' tag='LABEL' type='' class='col-sm-4 control-label' check:innerText='Срок окончания приема заявок' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASkAAAAbCAYAAAAgXHmQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAU+SURBVHhe7ZjrcSQrDIU308nFE8l2Gp4wXA7CG0QvIB7SQTTsLfc1P85X1WU3D0noCM3Yv05CCNkYNilCyNawSRFCtoZNihCyNWxShJCtYZMihGwNmxQhZGvYpAghW/M/NKnP83g8zod6nu9feY4QQq65tUl9vT9TUzo+8kAiN62318lWRQiZcV+T+vM6n12DyuQ5fqMihMy4rUl9/r76tvR1fn7oGfl2dXzYPw29Jla+nY3WpHnlN8XxeJ6vP3nAIzfNahfj/jjC+BGiFLxviNdxfZ2vtz5WkyO3qcu+x+/iOZLHlC9v/tJXAPMU6XPl+EpPy0XPaI+OaU3vtRgj1k6nX5134k7ahjmTw+JHPZ1NB6gjPE9XZ+HBD3Gso26dYyM+U18Y/0JN78JNTcq/KGNakaEY2kZXoM4aU9hxflZcuUibjXzJ9D4jaIzVFvs8roXGkfdcNyl8D/wXX4GuAWQ7+hxSuHCxobh7PP84tqb3SozVlsqJ6KFjlDXPt2d3CWWts1/7dXx0oH6z94Dkt68bG6P4vrIjmig731DTO3FTk8pFARdljF8E5pK4AsKa8p7FiMV2HYNz6SPoSwma7Ov1S3EtNA7XDsSX1ugLGsEzLPgK6DzVPeES62LvL2vgO5vUld7lfRIj7hGw/uT9eA/5Mz7j+HEe8Zx1PK8FPd1cXGJjsGfJuHWG+kI8Xp2YMckT5tb3NajpzdiqSZnER/SldAUMQPJbMUSbznrDKE4Qugoq4ybOpbjwkgq28L1YBgUXyfbTt4D41DUrvnSeAuV8eBbvbDUXIzz/OLagd2Ae4zg/6bx1vPiLP1Xs0VZYY9dqZF/NscrflBSnc8ZAOpey29Z4NQC5gnqPiL2SE89GBHJVdZRxL85d2OrPvS5RumhrUgEQrRUAXC6XgV9XUCyozFJc2V62YR5V+P2nNcSBdtL4ZI1+lO3WAGR90iqdBfPm2XPOW1H2Kji2oHdgHqMXm3pqTpq/mOPit/yOTSq9Fxs5Z702I8SX9R/I9VDsphigdgvYxOr6CNgpzzS3JVclpqua3owf+sc5zg8SqwvSvUCBYWGLTXtZkNEauFTJd/vUMcW3FBfYy/Q5Glw6U1joC2Na81XzFG2Wcce+XBg1VnMxwvOPYwt6B+Yx4tlHKH9xf1ofx+QcKTfFxqBxzOq5x9aWu9/zlceGuXLj076s3wZoUHVczeHPcVuTGomdGAiBiWoNJzCwJ5eoXRq9B+d6BgKhrypo+V1d2qW48JIK88K38Zl8FLL/doY1X2LrOI+w1p5TNylHF50LF88/ji3oXd+vY/Rz6PsTG/H343xF29l/slFicc+X473UqqfZ9TWRGrG1k/YY/zr2wKDe0Bfm9p9qejPua1IBTwRf8Dym1zpiiIB9g9Di20IfCKZJAmkbeY+ODwo3xaHm53H5RYp2eiD+HGvLSZ4PY3jmma+iTX/Odg5ZA8ULuejx/OPYmt4rMVZbSmPZN77oqFd6L/udmpL18bk49yCuYkdsqP3ZT7RbfTm+i52rPKGvUifNTq6TLo/jmt6JW5tUQolRHitCpCT5lX6WdVYIoRbuYE2a78TwbVUwRmxqIKhXTNdxrTWOnlxc3QVsfqJNewHWfBU7Jk5z0USTaS46PP84tqb3PMZCjrU+GJ/MVzvRhspFyo0+Z/Kh7IU5iQX9WlAbm7usZZ2PtmyOrY4FiN25T+lBnb6hpnfh/ia1RCna/RJE7oB6k3XYpMgPQL3JOmxS5Aeg3mSdTZoUIYT4sEkRQraGTYoQsjVsUoSQjTnPv2/Gff0hvq+1AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetAttribute.Target>
+                    </uix:NGetAttribute>
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&quot;Номер&quot;, number, &quot;Срок окончания приема заявок&quot;  , srok }]" DataTable="[dbDannye]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="375.2,188" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                    <ui:OutputDataTable DataTable="[dbDannye]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="375.2,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[textdbDannye]" />
+                    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="otchet.xlxs" sap:VirtualizedContainerService.HintSize="375.2,134.4" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[textdbDannye]" />
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,844.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="files" />
+                        <Variable x:TypeArguments="sd:DataTable" Name="dannye2" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Документация'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28311c4c-0999-41b1-82b6-d4835216b3ea" Version="V1">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://goszakup.gov.kz/ru/announce/index/8432673" DesignTimeRectangle="296, 430, 150, 51" ElementType="Text" FriendlyName="'Документация'" FullSelectorArgument="&lt;webctrl aaname='Документация' parentid='main-wrapper' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Документация' parentid='main-wrapper' tag='A' type='' class='' check:innerText='Документация' /&gt;" Guid="7423843e-98b4-493a-8d1c-504b3b1bdc30" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAA3CAYAAAD0fVMnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANCSURBVHhe7ZbrlaMwDEan6zQRqiBlDFUkFeRfpgmvZctGlsUkC4s2j++e4zMZ8EOSL4avAIADEA24ANGACxANuADRgAsQDbgA0YALEA24ANGACxANuADRgAsQDbgA0YALEA24ANGACxANuADRgAsQDbgA0YALEA24ANGAC/uL9jOF4XAIB6sdp3DjbuC9cRNtvPD/zPkE0T4JJ9GGMP3w/wxE+yyeTrR0Xbxe25PwFqbjIQzfZdQ5jPUVnH/P95jLGOfh9dPv2P90zvcEZV198t6+hxrL4n2dh1hTj29ajSPnZd8jdN4ZXUMrlpyXrL+xVmpjrOB+PJFopQAiYRZj3ty24FRYWfx+TnWNBRiOuqgsbLMWb5yMnT8D5Jr3RJNY8dW8pVjdOitF43lkLDknlX+K99VFW0iiK/pDmyMLTnKo/t0c6pTjWKZY7OZkouunMfWdr9snpN6ozaKZD6KWb41oPOZI8c7zmzFwXT5CNPNJI5pNEwWn67pgWg694SUW+itOEIplvOSxVTQ9tqDE2CyapJ5A3LaIJnPtaqBiK3353z3YXTRzIyK/FknSFIafdNoEq29EztNtbC0oSVUKW35bovFaXVOi3elTsEUTOVFLcvG11aKJ/pZYZf4m3hcXLRVDnB4Fs0hWss3Tdq+AkXriqNONEHPR+kkqupbie/BEU5gPyMJYUzSz70bRaM5y3Zg/11pcS31eWrRcoPm7Z6Yr+kObIwuuN6PAfeI3V/ftIwtKv0+TiE+Jxq+xLna1KVtFM8eXV+gq0eK3Zs0p0sWS82zqpnLag31F+yWBvugsjuyfxsvNVgVfkCE/sXr+SBMPF7z2UaJFuief+8gN3yraUo5t/H8hWjMuomLpc4o0ddmH3USrSd9rqvCpePW+3qy+4Lm/KhILqDdGF5TGzn160Qidh55zs2gRa402LyGf1fh0KvM0OTSxGKcZ8fKiGUWVPNJnFQsb/Y4kIbvPh+fjLUV7leL/CyDafxAtzUevhj1OySfl40UDQALRgAsQDbgA0YALEA24ANGACxANuADRgAsQDbgA0YALEA24ANGACxANuADRgAsQDbgA0YALX9frNaCh7d1wogEXIBpwIIQ/D1U179S/KuAAAAAASUVORK5CYII=" InformativeScreenshot="f5095cc78d3b8d5682c40c19b0e7ebeb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Портал государственных закупок Республики Казахстан' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Перейти'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28311c4c-0999-41b1-82b6-d4835216b3ea" Version="V1">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://goszakup.gov.kz/ru/announce/index/8432673?tab=documents" DesignTimeRectangle="1432, 557, 360, 88" FriendlyName="'Перейти'" FullSelectorArgument="&lt;webctrl aaname='Наименование документа Признак ' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Наименование документа Признак ' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='                                                                                                                      ' check:innerText='Перейти' /&gt;" Guid="145fd5a0-42f6-463c-9c22-4c1963d3982a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWwAAABcCAYAAABKko+gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPESURBVHhe7dyxbtNcGMdh7res5S4YuYxKVNwBC2IGIVVdqk6t2BgipYvJseP0ODlJCQGT9+V5pD9fmsat5eEXK3zi1XK57Mru7+/7/5qZ2Xmt9Ll4VR6Ymdl5rw92/+fK+AQA50WwAYIQbIAgBBsgCMEGCEKwAYIQbIAgBBsgCMEGCEKwAYIQbIAgBBsgCMEGCEKwAYIQbIAgBBsgCMEGCEKwAYIQbIAgBBsgCMEGCEKwAYIQbIAgZg/2ty8P3bu3H7s3r6+7y4v3dsLKNSzXslxTIL9Zg13C0gqPnT7RhvxmDXa5G2zFxk5fubZAbrMG28cgf2/l2gK5zRrsVmjszw3ITbATDchNsBMNyE2wEw3ITbATDchNsBMNyE2wEw3ITbATDchNsBMNyE2wEw3ILUywP9w8rX/KPj+6z43j/uquvneLxffuQ//1Xff4L86hGpBbrGBv4ri1Tz9WP/3fxLJ+I1ncfG2+Zq4BuQl2ogG55Q12/9yzyd1v+Sije+pub+rXrL6+qo5f7fPkn5iefr91Pv3r18/Vd95Tw8/pX/twtzn28uJrd7vYfu64AbmlDPYQyzrg5fPlKtp9sIt9xzTi2f+O52jvnM/4BrFzjsPP2v64ZDvYm8ALNrBHwmAPgXz8dOA162BPX1OFtf9+HfxhdWSn51OOfeoeH1rn+CvBHv7C8nHnrvu4AbklDPZwN91WB3vPRyAlmOPdcksj2OVxCXL7HF8Odnlc3jymET9+QG75gt28e97aC8Huf9fmDaC9zflUd+O/Fexy7utjBBs4JO0d9nYgJ2tGvQpr//N2g15vPJ/b9d1x/dyvB3t1/OL59wg2cEjCYK9fuxXcPobj8etg7x4zfj1Edvr7pm8Ew+tXqsAeHeyV+nnBBg5JGeyyTVBH9bHjRyKT/61vevwm2pU6rtPAV88dE+yt1wo2cEiYYP/R7fkMO/qA3AS79f2gA3IT7Nb3gw7I7f8MdtIBuQl2ogG5CXaiAbkJdqIBuQl2ogG5CXaiAbkJdqIBuQl2ogG5CXaiAbnNGuw3r6+bobHTV64tkNuswX739mMzNnb6yrUFcps12N++PDRjY6evXFsgt1mDXZSwlLtBH4+cvnINy7UUa/g/zB5sAH6PYAMEIdgAQQg2QBCCDRCEYAMEIdgAQQg2QBCCDRCEYAMEIdgAQQg2QBCCDRCEYAMEIdgAQQg2QBCCDRCEYAMEIdgAQQg2QBCCDRCEYAMEIdgAQWyCXR6Ymdl5rw/2crnsysoT42MzMzufCbaZWZANwe66n1TyHSJZQkiKAAAAAElFTkSuQmCC" InformativeScreenshot="1d10763895e0170c8671b3701df6126b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Портал государственных закупок Республики Казахстан' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="1430, 642, 364, 92" FriendlyName="'Перейти'" FullSelectorArgument="&lt;webctrl aaname='Наименование документа Признак ' tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Наименование документа Признак ' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='TD' aaname='                                                                                                                      ' check:innerText='Перейти' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAWwAAABcCAYAAABKko+gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQDSURBVHhe7dq9bhNrEIDhc7/QwlVQchtIIK6AClEhIZooDQpNIjoKS0mzx9/6J9/aY4MxLJ7hGek5cuzdZDXF69Vy/hvWc3Nzs35ljDHmkmbTZ8E2xpgLn22w2wsALtsY7Pv7+6Fpb2xeA3A5BBsgCcEGSEKwAZIQbIAkBBsgCcEGSEKwAZIQbIAkBBsgCcEGSEKwAZIQbIAkBBsgCcEGSEKwAZIQbIAkBBsgCcEGSEKwAZIQbIAkBBsgidmD/enj1+Hli3fD86dvhmdPXnOGtsO2y7bTaNdALbMGu4UlCg/nE22ob9Zgt7vBKDacr+022jlQx6zB9hjkz2m7jXYO1DFrsKPQ8PtEOwfqEOxCop0DdQh2IdHOgToEu5Bo50Adgl1ItHOgDsEuJNo5UIdgFxLtHKhDsAuJdg7UIdiFRDsH6hDsQqKdA3UIdiHRzoE60gT77dXDeKGH5/vwITjvj3r1bVgsvg1vx5+/DHd/4xo60c6BOnIFexvHHe+//51gL/VfJIurz+Exc4l2DtQh2IVEOwfqqBvs8b3Hmdz9tkcZw8NwfdUfs/z5VXf+0ofb9UfjTD+Prmc8fv1ef+c9ndXvGY+9/bI999mTz8P1Yve900Q7B+ooGexVLPuAt+fLXbTHYLc5dE4Qz/FvPEZ773o2XxB717j6XbuPS3aDvQ28YAMHFAz2KpB3748csw729JgurOPnffBX+shOr6ed+zDc3UbX+DPBXv2D5d3eXfdpop0DdRQM9upuOp4+2AcegbRgbu6WowmC3V63IMfX+ONgt9fty2Ma8dNFOwfqqBfs8O55xw+CPf6t7RdAbHs93d34LwW7Xfv6HMEGjil7h70byIkw6l1Yx9+3H/Te5nqu13fH/Xs/H+zl+YvHvyPYwDEFg70+die4Yww356+DvX/O5udVZKd/b/pFsDp+OV1gTw72cvr3BRs4pmSwm21QN9Ofu3kkMvnf+qbnb6PdTR/XaeC7904J9s6xgg0ckybYv9WBZ9jZRTsH6hDs6POkop0DdQh29HlS0c6BOv7NYBcV7RyoQ7ALiXYO1CHYhUQ7B+oQ7EKinQN1CHYh0c6BOgS7kGjnQB2CXUi0c6AOwS4k2jlQh2AXEu0cqGPWYD9/+iYMDedru412DtQxa7BfvngXxobztd1GOwfqmDXYnz5+DWPD+dpuo50Ddcwa7KaFpd0NejxyvrbDtkuxhn/D7MEG4NcINkASgg2QhGADJCHYAEkINkASgg2QhGADJCHYAEkINkASgg2QhGADJCHYAEkINkASgg2QhGADJCHYAEkINkASgg2QhGADJCHYAEkINkAS22C3FwBctjHY43+Xs3nDGGPMZY1gG2NMkln1eRj+B8wNZ4SmH+ExAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dannye2]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Документ' ReferenceIdx='0' Name='Документ'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Документ Url' ReferenceIdx='1' Name='Документ Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Автор' ReferenceIdx='2' Name='Автор'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Организация' ReferenceIdx='3' Name='Организация'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Дата создания' ReferenceIdx='4' Name='Дата создания'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Подпись' ReferenceIdx='5' Name='Подпись'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Подпись Url' ReferenceIdx='6' Name='Подпись Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Документ' attr='text' name2='Документ Url' attr2='href' /&gt;&lt;column name='Автор' attr='text' /&gt;&lt;column name='Организация' attr='text' /&gt;&lt;column name='Дата создания' attr='text' /&gt;&lt;column name='Подпись' attr='text' name2='Подпись Url' attr2='href' /&gt;&lt;/extract-table&gt;" ExtractSimilar="True" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_3" MaximumResults="0" ScopeIdentifier="28311c4c-0999-41b1-82b6-d4835216b3ea" Version="V1">
+                        <uix:NExtractData.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="410, 290, 1075, 187" FriendlyName="'Документ Автор'" FullSelectorArgument="&lt;webctrl parentid='ModalShowFilesBody' tag='TABLE' /&gt;" Guid="cf4675a9-2fda-416f-88c7-e8fd17c51d55" InformativeScreenshot="e719372e32104782fcd4ba3206a5cd13.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Портал государственных закупок Республики Казахстан' /&gt;" SearchSteps="Selector" Visibility="Interactive" />
+                        </uix:NExtractData.Target>
+                      </uix:NExtractData>
+                      <uix:NClick ClickType="Single" DisplayName="Click 'contract_project_841907…'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28311c4c-0999-41b1-82b6-d4835216b3ea" Version="V1">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://goszakup.gov.kz/ru/announce/index/8419073?tab=documents" DesignTimeRectangle="434, 404, 220, 18" ElementType="Text" FriendlyName="'contract_project_841907…'" FullSelectorArgument="&lt;webctrl parentid='ModalShowFilesBody' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ModalShowFilesBody' tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='contract_project_8419073.pdf' check:innerText='contract_project_8419073.pdf' /&gt;" Guid="871c25aa-f3c6-45eb-b318-4f5bbeee63c9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOAAAAAWCAYAAADZ5pDlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUYSURBVHhe7Zq9qmRFFIV9Jx/AXHMfwNwH0FBMNBFDjYw0NNNAhglEMDAYcMBAEDFSExEFBYOWb+jVrrt671PVfbvty1AfHG6fqtp/a9fuuczMC7vFYnEz1gAuFjdkDeBicUPWAC4WN2QN4GJxQ242gN/+9Nvu7U+f7t+uz4ePvt89evrz/u1hQE6vvPt498vvf+1XLsO52pIH+bz45ufPntc++Hr359//7HePYY8zb3zyZL9yDLm8+v6XZY3svfTWF4d46JFkTh5L8bWXz9bZa+guKl08vse+yQDONO6SqNEPbQCvwbnapp3eefhcwcDkRXc0PNVlV080dIrnQyh7reV7B/v4JoYgR6+F9yqvS5BaAjlV8dYAPmecqy3a5KXl88vvPL6zJqRpN4D42/rTBhsfCMh41aXF79bgKC8fUq15/7HHzzXuxL0G0IXlSZGUeCeuBPr4qx8PZ3hUaGfPPrFe/+ibZ+sel0J0PvdElzd+3faUi4lo+Hnvs+8O9lkvn/kVS2fIQRdopGXVlLSp8u38dtrOgE6eO/C5GkBiSRd+Zo7SnPqqGmXPnqP8dVfwm77zTML51LlCGnZ+YKb/oHp0hjvsuvBTezxe950BlHCelBekpF0UPntS8uEi5Bkl7H5k52vAu/tSAyrbUd6+PwNCjWpRPr4Gykliq2b3xZ7bKc8tm1GtsnF9Zki7KrZQ3j/8+scwVtYI8q06hbRkfeZMckqfXbMOYoz6rzzzDHauC75SB7gzgBi4UcJeJp2CUDwiIIZIYZS0x6rs5DsFzTxGeZ/SGIeaupxUb75DVR9kHtmUrAvSZlRrF3sW7Lg8eYGE92QmVtYosOlqxUa+XVeo9Bb4rGI52Km+0X3g7Kj/+OjOuC6cr3I7DOBWYbAltotJQhkoL1Hlq7JzlJ/EU7xR3pDxZ8Gn4jjkrdwV3313OWXd3pSRDesztVbazuCXX+BD+QmvfSaW1+igF31UPPnSmtftdBrMaOPMnGePHMjFcQ2qM5UunKt0OBrA7pJ2ggCBlEQ1SPcZQM7k0Hm8Ud5wqwHMeFm3N0U2qjUfzs7UWmk7g2sqFE89J67yhZlYXmOCP9Wn/iiefCu2yJwEtvig17Ns5QbspyZAvaq50g38DHSxLvYnoNazSXDuAHaDg52KHuUNlxzAzF3x3XeXk2y1zk/VPFPHzJlK2xk4nzbpi5/+peCP6ki8xhHZpyonaZC9PCWOGNmwP+r/zBnoYh0GsDJK2MtgEoQAgDAZ6NwBrNYUT3nM5H2fAcQOe6H48pXv0OWUeXhTOhv3P1PrzJkKzmOHvZAv9TaZidVdvCpenq1s0aHz1+WBTfYRqhwc4o/6X/nWGc+n0+HOX8LgjG8zOQc31AVyx3x2x9hmoLx4VeO27MhBYJPfuLN5+/4M+MCvN4n4/o5/4qRv5aTcVbPbeo7Q1es2o1oVx7WdoYvt+SUzsbJGkXVU8aWt/Ovdz4DyyHWh/ZGOCf5G/a98cwY716XT4c4AgoTAAU8aSQTte2CgoLSpBkACsM5+ZQc6p4eiKEZ2YpS3RMl8t5Bo/Lcu+U176eG1iczJGwJVU9KmyndUa2o7i2rp/CbkRX5Zl9NdPMjeVhpmTlUsnSFWh3KVn0ob7F3vmf5D+s5/B4ROh6MBXPzH1uW5BNf2v7gf/0d/1gBucO0G8A1ZfaMuHgZrAK9A/rrQPYh/rQb4r5DVr12X4pRaF8esAVwsnnPWAC4WN2O3+xduzVZCVckflAAAAABJRU5ErkJggg==" InformativeScreenshot="53d6664ede9edbb840b72403c264d9b9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Портал государственных закупок Республики Казахстан' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="04029fd89ca93e86faece5e23458512b.png" Selector="&lt;html app='chrome.exe' title='Объявления о проведении государственных закупок :: Портал государственных закупок Республики Казахстан' /&gt;" Url="https://goszakup.gov.kz/ru/search/announce" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
